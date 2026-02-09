@@ -6,7 +6,7 @@
 /*   By: julian <julian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:45:23 by julian            #+#    #+#             */
-/*   Updated: 2026/01/15 01:48:04 by julian           ###   ########.fr       */
+/*   Updated: 2026/02/09 02:13:29 by julian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@
 
 # include "Animal.hpp"
 
-class Dog : Animal
+class Dog : public Animal
 {
+    
     public :
+
         Dog();
+        Dog(std::string type);
         ~Dog();
-        
-        void makeSound();
-        
-}
+
+        void makeSound() override;
+};
 
 #endif

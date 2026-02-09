@@ -6,7 +6,7 @@
 /*   By: julian <julian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:37:26 by julian            #+#    #+#             */
-/*   Updated: 2026/01/15 01:44:56 by julian           ###   ########.fr       */
+/*   Updated: 2026/02/09 02:04:40 by julian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ class Animal
     public:
         Animal();
         ~Animal();
-        
-        void makeSound();
+
+        virtual void makeSound();
 };
 
 

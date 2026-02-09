@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julian <julian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 01:37:02 by julian            #+#    #+#             */
-/*   Updated: 2026/02/09 02:14:34 by julian           ###   ########.fr       */
+/*   Created: 2026/02/08 18:46:05 by julian            #+#    #+#             */
+/*   Updated: 2026/02/09 02:12:50 by julian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef CAT_HPP
+# define CAT_HPP
 
 #include "Animal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
 
-int main()
+class Cat : public Animal
 {
-    const Animal* meta = new Animal();
-    const Animal* rex = new Dog();
-    const Animal* kitty = new Cat();
-    
-    
-    return 0;
-}
+    public:
+
+        Cat();
+        Cat(std::string type);
+        ~Cat();
+
+        void makeSound() override;
+};
+
+#endif
