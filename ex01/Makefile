@@ -6,14 +6,14 @@
 #    By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/13 17:01:18 by julian            #+#    #+#              #
-#    Updated: 2026/03/11 16:11:08 by jvenkata         ###   ########.fr        #
+#    Updated: 2026/03/11 17:51:04 by jvenkata         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
-NAME = Polymorphism
+NAME = Zoo
 
 OBJ = $(SRC:.cpp=.o)
 
