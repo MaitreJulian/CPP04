@@ -6,14 +6,14 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:23:48 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/12 16:03:14 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 16:03:28 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "Cat.hpp"
 
-Cat::Cat() : Animal()
+Cat::Cat() : AAnimal()
 {
     std::cout << "Cat created" << std::endl;
     _type = "Cat";
@@ -26,7 +26,7 @@ Cat::~Cat()
     std::cout << "Cat destroyed" << std::endl;
 }
 
-Cat::Cat(const Cat &other) : Animal(other)
+Cat::Cat(const Cat &other) : AAnimal(other)
 {
     std::cout << "Cat copy constructor called" << std::endl;
     _brain = new Brain(*other._brain);
@@ -38,7 +38,7 @@ Cat &Cat::operator=(const Cat &other)
 
     if (this != &other)
     {
-        Animal::operator=(other);
+        AAnimal::operator=(other);
 
         delete _brain;
         _brain = new Brain(*other._brain);

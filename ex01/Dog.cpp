@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 14:49:16 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/12 15:28:21 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 16:03:00 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ std::string Dog::getType() const
 
 void Dog::makeSound() const
 {
-    delete _brain;
     std::cout << "Woof!" << std::endl;
 }
 
