@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:23:48 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 17:50:45 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:28:28 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 Cat::Cat() : Animal()
 {
+    std::cout << "Cat created" << std::endl;
     _type = "Cat";
     _brain = new Brain();
-    std::cout << "Cat created" << std::endl;
 }
 
 Cat::~Cat()
@@ -57,4 +57,21 @@ void Cat::makeSound() const
     delete _brain;
     std::cout << "Meow!" << std::endl;
 }
+
+Brain *Cat::getBrain() const
+{
+    return _brain;
+}
+
+std::string Cat::getIdea(int index) const
+{
+    if (index < 0 || index >= 100)
+    {
+        std::cerr << "Index out of bounds" << std::endl;
+        return "Nope, this cat is brainless";
+    }
+    return _brain->getIdea(index);  
+}
+
+
 

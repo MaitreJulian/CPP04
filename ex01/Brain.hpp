@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 16:36:21 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 16:36:48 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:08:09 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class Brain
         Brain(const Brain &other);
         Brain &operator=(const Brain &other);
         ~Brain();
+        std::string setIdea(int index, const std::string idea);
+        std::string getIdea(int index) const;
 };
 
 #endif

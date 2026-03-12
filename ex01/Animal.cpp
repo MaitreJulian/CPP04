@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:39:50 by julian            #+#    #+#             */
-/*   Updated: 2026/03/11 17:44:33 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:23:52 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,6 @@ Animal& Animal::operator=(const Animal& other)
         _type = other._type;
     }
     return *this;
-}
-
-Brain *Animal::CreateBrain()
-{
-    Brain* brain = new Brain();
-    return brain;
 }
 
 std::string Animal::getType() const

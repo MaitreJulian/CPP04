@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:45:23 by julian            #+#    #+#             */
-/*   Updated: 2026/03/11 16:39:26 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:09:38 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ class Dog : public Animal
 
         std::string getType() const;
         void makeSound() const;
+        Brain *getBrain() const;
+        std::string getIdea(int index) const;
 
 };
 

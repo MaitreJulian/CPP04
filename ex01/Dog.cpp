@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 14:49:16 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 17:50:22 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:28:21 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 Dog::Dog() : Animal()
 {
+    std::cout << "Dog created" << std::endl;
     _type = "Dog";
     _brain = new Brain();
-    std::cout << "Dog created" << std::endl;
 }
 
 Dog::~Dog()
@@ -57,3 +57,19 @@ void Dog::makeSound() const
     delete _brain;
     std::cout << "Woof!" << std::endl;
 }
+
+Brain *Dog::getBrain() const
+{
+    return _brain;
+}
+
+std::string Dog::getIdea(int index) const
+{
+    if (index < 0 || index >= 100)
+    {
+        std::cerr << "Index out of bounds" << std::endl;
+        return "";
+    }
+    return _brain->getIdea(index);
+}
+

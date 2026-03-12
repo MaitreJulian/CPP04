@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:37:26 by julian            #+#    #+#             */
-/*   Updated: 2026/03/11 17:43:58 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:32:19 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Animal
 
         virtual std::string getType() const;
         virtual void makeSound() const;
-        virtual Brain *CreateBrain();
+        virtual Brain *getBrain() const;
 };
 
 class WrongAnimal

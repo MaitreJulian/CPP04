@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:29:50 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 16:39:18 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:06:16 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ class Cat : public Animal
 
         std::string getType() const;
         void makeSound() const;
+        Brain *getBrain() const;
+        std::string getIdea(int index) const;
 
 };
 
