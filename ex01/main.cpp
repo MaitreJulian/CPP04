@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
+/*   By: julian <julian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 16:36:05 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 17:42:56 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 12:14:50 by julian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 int main(void)
 {
 	{
+		std::cout << "Creating an array of 10 animals (5 dogs and 5 cats):\n" << std::endl;
 		const Animal *Zoo[10];
 
 		for (int i = 0; i < 10; i++)
@@ -34,6 +35,8 @@ int main(void)
 		for (int i = 0; i < 10; i++)
 			delete Zoo[i];
 	}
+}
+	/*
 	std::cout << "-------------------------------------\n";
 	{
 		std::cout << "Check deep copy of Dog class using copy constructor:\n" << std::endl;
@@ -74,3 +77,4 @@ int main(void)
 	}
 	return (0);
 }
+	*/
