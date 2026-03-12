@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 01:39:50 by julian            #+#    #+#             */
-/*   Updated: 2026/03/12 15:57:55 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 16:13:37 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 AAnimal::AAnimal() 
 {
     _type = "Animal";
-    std::cout << "Animal created" << std::endl;
+    std::cout << "Animal constructor" << std::endl;
 }
 
 AAnimal::~AAnimal()

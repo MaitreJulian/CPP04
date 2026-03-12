@@ -6,7 +6,7 @@
 /*   By: jvenkata <jvenkata@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:29:50 by jvenkata          #+#    #+#             */
-/*   Updated: 2026/03/11 16:03:27 by jvenkata         ###   ########.fr       */
+/*   Updated: 2026/03/12 16:11:08 by jvenkata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ class Cat : public Animal
 
         std::string getType() const;
         void makeSound() const;
-
 };
 
 class WrongCat : public WrongAnimal
